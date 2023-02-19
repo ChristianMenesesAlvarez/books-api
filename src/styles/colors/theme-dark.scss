@@ -1,0 +1,91 @@
+@import 'palette';
+/* --------------- COLOR PALETTE ---------------*/
+$vanilla: #e9d8a6ff;
+$gamboge: #ee9b00ff;
+$alloy-orange: #ca6702ff;
+$rust: #bb3e03ff;
+$rufous: #ae2012ff;
+$auburn: #9b2226ff;
+$rosewood: #640d14ff;
+$black-bean-2: #38040eff;
+$black-bean: #250902ff;
+$true-blue: #0466c8ff;
+$sapphire: #0353a4ff;
+$yale-blue: #023e7dff;
+$oxford-blue: #002855ff;
+$oxford-blue-2: #001845ff;
+$oxford-blue-3: #001233ff;
+$delft-blue: #33415cff;
+$paynes-gray: #5c677dff;
+$slate-gray: #7d8597ff;
+$cool-gray: #979dacff;
+$white: #ffffff;
+$black: #000000;
+
+$theme-dark: (
+  '.banner-wrapper': (
+    bg: none,
+    textcolor: none,
+    bdr: none,
+  ),
+  header: (
+    bg: $oxford-blue,
+    textcolor: white,
+    bdr: none,
+  ),
+  nav: (
+    bg: $yale-blue,
+    textcolor: black,
+    bdr: none,
+  ),
+  '.main-wrapper': (
+    bg: none,
+    textcolor: none,
+    bdr: none,
+  ),
+  aside: (
+    bg: $paynes-gray,
+    textcolor: black,
+    bdr: 2px solid black,
+  ),
+  '.aside-button': (
+    bg: $white,
+    textcolor: $black,
+    bdr: 2px solid white,
+  ),
+  main: (
+    bg: none,
+    textcolor: none,
+    bdr: none,
+  ),
+  section: (
+    bg: white,
+    textcolor: black,
+    bdr: 2px solid black,
+  ),
+  article: (
+    bg: white,
+    textcolor: black,
+    bdr: 2px solid black,
+  ),
+  '.footer-wrapper': (
+    bg: none,
+    textcolor: none,
+    bdr: none,
+  ),
+  footer: (
+    bg: white,
+    textcolor: black,
+    bdr: 2px solid black,
+  ),
+  '.search-bar': (
+    bg: skyblue,
+    textcolor: white,
+    bdr: none,
+  ),
+  '.login-form': (
+    bg: $true-blue,
+    textcolor: white,
+    bdr: none,
+  ),
+);

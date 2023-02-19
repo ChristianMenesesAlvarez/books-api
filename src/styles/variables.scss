@@ -1,0 +1,20 @@
+/* -------------------- SECTION HEIGHT -------------------- */
+$banner-wrapper-height: 100px;
+$banner-header-ratio: 60%;
+$banner-nav-ratio: calc(100% - $banner-header-ratio);
+
+$footer-wrapper-height: 100px;
+
+$main-wrapper-min-height: calc(100vh - $banner-wrapper-height - $footer-wrapper-height);
+$main-aside-ratio: 20%;
+$main-main-ratio: calc(100% - $main-aside-ratio);
+
+/* -------------------- RESPONSIVE SETTINGS -------------------- */
+/* Extra small devices (phones, 600px and down) - Small devices (portrait tablets and large phones, 600px and up) */
+$breakpoint1: 600px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$breakpoint2: 768px;
+/* Large devices (laptops/desktops, 992px and up) */
+$breakpoint3: 992px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$breakpoint4: 1200px;

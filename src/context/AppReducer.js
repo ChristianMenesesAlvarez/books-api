@@ -1,9 +1,9 @@
 export function AppReducer(state, action) {
   switch(action.type) {
-    case 'GET_USERS':
+    case 'CHANGE_THEME':
       return {
         ...state,
-        users: action.payload,
+        theme: action.payload,
       }
     default:
       return state;

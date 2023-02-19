@@ -1,0 +1,22 @@
+.banner-wrapper {
+  @extend %flxcol;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: $banner-wrapper-height;
+
+  header {
+    @extend %flxrow;
+    width: 100%;
+    height: $banner-header-ratio;
+  }
+
+  nav {
+    @extend %flxrow;
+    width: 100%;
+    height: $banner-nav-ratio;
+    button {
+      width: 100%;
+    }
+  }
+}

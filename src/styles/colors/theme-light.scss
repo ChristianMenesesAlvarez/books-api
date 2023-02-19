@@ -13,13 +13,12 @@ $dark-color4: #002855ff;
 $dark-color5: #33415cff;
 
 $theme-light: (
-  container: (
-    bg: #e4ada7,
-    colour: #000,
-    border-colour: #000
-    ),
   button: (
-    bg: #481b16,
+    bg: white,
     colour: #fff
-    )
+    ),
+  header: (
+    bg: grey,
+    colour: #fff
+    ),
 );

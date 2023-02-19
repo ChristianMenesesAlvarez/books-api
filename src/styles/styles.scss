@@ -1,0 +1,67 @@
+@import './variables.scss';
+@import './colors/palette.scss';
+
+/* -------------------- GENERAL RULESET -------------------- */
+:root {
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: background 0.5s ease;
+}
+
+.root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+%flx {
+  display: flex;
+}
+
+%flxrow {
+  @extend %flx;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+%flxcol {
+  @extend %flx;
+  flex-flow: column;
+  justify-content: start;
+  align-items: stretch;
+}
+
+body {
+  @extend %flxrow;
+}
+
+/* -------------------- SECTION RULESET -------------------- */
+@import './containers/Header.scss';
+@import './containers/Layout.scss';
+@import './containers/Footer.scss';
+
+/* -------------------- COMPONENTS RULESET -------------------- */
+@import './components/SearchBar.scss';
+@import './components/LoginForm.scss';
+
+/* --------------- THEME RULESET ---------------*/
+@import './colors/theme-light.scss';
+@import './colors/theme-dark.scss';
+
+@mixin themify($theme-name, $theme-map) {
+  @each $section, $map in $theme-map {
+    #{$section}.#{$theme-name} {
+      background: map-get($map, bg);
+      color: map-get($map, textcolor);
+      border: map-get($map, bdr);
+    }
+  }
+}
+
+@include themify('theme-dark', $theme-dark);
+@include themify('theme-light', $theme-light);

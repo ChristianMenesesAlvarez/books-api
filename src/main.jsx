@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { GlobalProvider } from './context/GlobalState';
-import './styles/theme.scss';
+import './styles/styles.scss';
 import { FrontPage } from './router';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

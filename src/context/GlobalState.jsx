@@ -2,7 +2,7 @@ import React, { useReducer, createContext } from "react";
 import { AppReducer } from './AppReducer';
 
 const initialState = {
-  users: ["pepe"]
+  theme: 'theme-dark'
 };
 
 export const GlobalContext = createContext(initialState);
@@ -10,13 +10,10 @@ export const GlobalContext = createContext(initialState);
 export function GlobalProvider({children}) {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
-  const getUsers = async () => {
-    const res = {
-      username: 'paco',
-      password: '1234'
-    };
+  const changeTheme = () => {
+    const res = state.theme === 'theme-light' ? 'theme-dark' : 'theme-light';
     dispatch({
-      type:'GET_USERS',
+      type:'CHANGE_THEME',
       payload: res,
     })
   }
@@ -24,8 +21,8 @@ export function GlobalProvider({children}) {
   return (
     <GlobalContext.Provider
     value={{
-      users: state.users,
-      getUsers,
+      theme: state.theme,
+      changeTheme,
     }}
     >
       {children}

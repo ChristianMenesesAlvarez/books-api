@@ -1,13 +1,10 @@
-@import './theme.scss';
-
 .login-form {
   @extend %flxcol;
   width: 200px;
   padding: 10px;
   gap: 5px;
-  background: white;
-  color: white;
-
+  margin: 10px;
+  
   * {
     padding: 5px 5px;
     width: 100%;
@@ -17,22 +14,22 @@
   div {
     font-size: large;
     font-weight: bold;
-    background: white;
+    background: inherit;
     border-radius: 2px;
   }
 
   input {
-    color: white;
+    color: black;
   }
 
   button {
-    background: white;
+    background: inherit;
     color: white;
-    border: 2px solid white;
+    border: 2px solid red;
     border-radius: 2px;
 
     &:hover {
-      background: white;
+      background: black;
       color: white;
     }
   }
