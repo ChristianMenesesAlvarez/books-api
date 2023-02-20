@@ -13,6 +13,10 @@
   transition: background 0.5s ease;
 }
 
+body {
+  margin: 0;  
+}
+
 .root {
   overflow-y: auto;
   overflow-x: hidden;
@@ -36,10 +40,6 @@
   align-items: stretch;
 }
 
-body {
-  @extend %flxrow;
-}
-
 /* -------------------- SECTION RULESET -------------------- */
 @import './containers/Header.scss';
 @import './containers/Layout.scss';
@@ -48,6 +48,7 @@ body {
 /* -------------------- COMPONENTS RULESET -------------------- */
 @import './components/SearchBar.scss';
 @import './components/LoginForm.scss';
+@import './components/SideBar.scss';
 
 /* --------------- THEME RULESET ---------------*/
 @import './colors/theme-light.scss';
@@ -59,6 +60,22 @@ body {
       background: map-get($map, bg);
       color: map-get($map, textcolor);
       border: map-get($map, bdr);
+      border-top: map-get($map, bdrt);
+      border-bottom: map-get($map, bdrb);
+      border-right: map-get($map, bdrr);
+      border-left: map-get($map, bdrl);
+      &:hover {
+        background: map-get($map, hover);
+        transition: background 0.1;
+      }
+      &:focus {
+        background: map-get($map, focus);
+        transition: background 0.1;
+      }
+      &:checked {
+        background: map-get($map, checked);
+        transition: background 0.1;
+      }
     }
   }
 }

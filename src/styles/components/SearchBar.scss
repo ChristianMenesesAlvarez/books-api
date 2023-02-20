@@ -11,6 +11,7 @@
   &:hover,
   &:focus-within {
     outline: 2px solid white;
+    outline-offset: 1px;
   }
 
   input {

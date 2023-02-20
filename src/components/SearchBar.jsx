@@ -7,8 +7,7 @@ export function SearchBar(props) {
   return (
     <div className={`search-bar ${theme}`}>
       <input type="search" name="" id="" placeholder="Search books" />
-      <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+      <button type="submit" className="searchButton"><i className="fa fa-search"></i></button>
     </div>
-    
   )
 }
