@@ -4,6 +4,7 @@ import { getCategories } from '../logic/fetch.js';
 
 export function SideBar() {
   const [categories, setCategories] = useState([]);
+  const { theme } = useContext(GlobalContext);
 
   useEffect(() => {
     async function fetchData() {
@@ -14,18 +15,19 @@ export function SideBar() {
   }, [])
 
   return (
-    <aside>
-      <div className="categories-title">CATEGORIES</div>
+    <div className={`side-bar ${theme}`}>
+      <div className={`sidebar-title  ${theme}`}>CATEGORIES</div>
       {categories.sort().map(i => <SideBarButton key={i[1]}>{i[0]}</SideBarButton>)}
-    </aside>
+    </div>
   )
 }
 
 function SideBarButton(props) {
-  const { children, key } = props;
+  const { children } = props;
   const { theme } = useContext(GlobalContext);
 
   return (
-    <button className={`sidebar-button ${theme}`} key={key} onClick={(key) => getList(key)}>{children}</button>
+    <button className={`sidebar-button ${theme}`} onClick={(key) => getList(key)}>{children}
+    </button>
   )
 }

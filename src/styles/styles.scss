@@ -14,12 +14,9 @@
 }
 
 body {
-  margin: 0;  
-}
-
-.root {
-  overflow-y: auto;
+  margin: 0;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 %flx {
@@ -28,14 +25,14 @@ body {
 
 %flxrow {
   @extend %flx;
-  flex-flow: row;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
 %flxcol {
   @extend %flx;
-  flex-flow: column;
+  flex-flow: column nowrap;
   justify-content: start;
   align-items: stretch;
 }
@@ -46,9 +43,14 @@ body {
 @import './containers/Footer.scss';
 
 /* -------------------- COMPONENTS RULESET -------------------- */
+@import './components/MainBar.scss';
 @import './components/SearchBar.scss';
+@import './components/NavBar.scss';
 @import './components/LoginForm.scss';
 @import './components/SideBar.scss';
+@import './components/Catalog.scss';
+@import './components/BookSection.scss';
+@import './components/BookItem.scss';
 
 /* --------------- THEME RULESET ---------------*/
 @import './colors/theme-light.scss';

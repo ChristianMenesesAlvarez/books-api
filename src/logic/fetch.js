@@ -23,14 +23,21 @@ export async function getCategories() {
   }
 }
 
-async function getList(date = 'current', category, offset = 0) {
-  if (!date.match(/^(\d{4}-\d{2}-\d{2}|current)$/)) return 'No valid date';
+export async function getList(category, date = 'current', offset = 0) {
   const reqURI = url + endpoints.getList + date + '/' + category + key + '&offset=' + offset;
   try {
     const res = await axios.get(reqURI);
-    const data = res.data.results;
-    const array = data.map(({ display_name, list_name_encoded }) => { return [display_name, list_name_encoded] });
-    return array;
+    return res.data;
+  } catch (e) {
+    return e.message;
+  }
+}
+
+export async function getOverview(date = '') {
+  const reqURI = url + endpoints.getTop5AllLists + key + '&published_date=' + date;
+  try {
+    const res = await axios.get(reqURI);
+    return res.data;
   } catch (e) {
     return e.message;
   }

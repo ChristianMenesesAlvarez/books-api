@@ -3,8 +3,4 @@
   align-items: stretch;
   width: 100%;
   height: $footer-wrapper-height;
-  footer {
-    @extend %flxrow;
-    width: 100%;
-  }
 }

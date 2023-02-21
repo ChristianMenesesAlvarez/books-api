@@ -2,7 +2,7 @@ import React, { useReducer, createContext } from "react";
 import { AppReducer } from './AppReducer';
 
 const initialState = {
-  theme: 'theme-dark'
+  theme: localStorage.getItem('theme') || 'theme-dark',
 };
 
 export const GlobalContext = createContext(initialState);
@@ -12,6 +12,7 @@ export function GlobalProvider({children}) {
 
   const changeTheme = () => {
     const res = state.theme === 'theme-light' ? 'theme-dark' : 'theme-light';
+    localStorage.setItem('theme', res);
     dispatch({
       type:'CHANGE_THEME',
       payload: res,

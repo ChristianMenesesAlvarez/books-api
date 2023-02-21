@@ -7,7 +7,7 @@ export function NavBar(props) {
   const { children } = props;
   
   return (
-    <nav className={`${theme}`}>
+    <nav className={`nav-bar ${theme}`}>
       {children}
     </nav>
   )

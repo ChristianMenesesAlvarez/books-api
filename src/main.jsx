@@ -19,5 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Footer />
       </BrowserRouter>
     </GlobalProvider>
-  </React.StrictMode>,
+   </React.StrictMode>,
 )

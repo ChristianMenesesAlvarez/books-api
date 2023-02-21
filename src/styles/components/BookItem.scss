@@ -1,0 +1,56 @@
+.book-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+
+  .item-head {
+    @extend %flxrow;
+    align-items: start;
+    gap: 5px;
+
+    .rank {
+      font-size: large;
+      font-weight: bolder;
+      width: 10%;
+    }
+
+    .headline {
+      display: flex;
+      justify-content: center;
+      flex-flow: column nowrap;
+      width: 90%;
+
+      span {
+        line-height: 150%;
+        text-align: center;
+      }
+    }
+  }
+
+  .item-body {
+    @extend %flxcol;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    img {
+      width: 90%;
+    }
+
+    .item-links {
+      @extend %flxrow;
+      gap: 10px;
+
+      i {
+        color: red;
+      }
+    }
+  }
+
+}

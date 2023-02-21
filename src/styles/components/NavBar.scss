@@ -1,0 +1,12 @@
+.nav-bar {
+  @extend %flxrow;
+  width: 100%;
+  height: $banner-nav-ratio;
+  button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: inherit;
+    color: inherit;
+  }
+}

@@ -1,0 +1,5 @@
+.main-bar {
+  @extend %flxrow;
+  width: 100%;
+  height: $banner-header-ratio;
+}
