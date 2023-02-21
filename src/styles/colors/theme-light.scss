@@ -1,2 +1,63 @@
 $theme-light: (
+  '.main-bar': (
+    bg: $oxford-blue,
+    textcolor: white,
+    bdr: none,
+  ),
+  '.search-bar': (
+    bg: skyblue,
+    textcolor: white,
+    bdr: none,
+  ),
+  '.nav-bar': (
+    bg: $yale-blue,
+  ),
+  '.nav-button': (
+    bg: $sapphire,
+    textcolor: $white,
+    bdr: none,
+    hover: $true-blue,
+  ),
+  '.main-wrapper': (
+    bg: $delft-blue,
+  ),
+  '.side-bar': (
+    bg: $white,
+    textcolor: black,
+    bdr: 2px solid black,
+  ),
+  '.sidebar-title': (
+    bg: $slate-gray,
+    textcolor: $black,
+    bdr: 2px solid $cool-gray,
+  ),
+  '.sidebar-button': (
+    bg: $slate-gray,
+    textcolor: $white,
+    bdr: 2px solid $cool-gray,
+    hover: $cool-gray,
+  ),
+  '.catalog-title': (
+    textcolor: $white,
+  ),
+  '.book-section': (
+    textcolor: $white,
+  ),
+  '.book-item': (
+    textcolor: black,
+  ),
+  '.item-head': (
+    bg: white,
+    textcolor: black,
+  ),
+  '.login-form': (
+    bg: $true-blue,
+    textcolor: white,
+    bdr: none,
+  ),
+  '.nav-button-selected': (
+    bg: $true-blue,
+    textcolor: $white,
+    bdrb: 2px solid $white,
+  )
 );

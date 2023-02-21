@@ -43,23 +43,18 @@ $theme-dark: (
   '.book-section': (
     textcolor: $white,
   ),
-  
-  article: (
+  '.book-item': (
     textcolor: black,
-    bdr: 2px solid black,
   ),
-  footer: (
+  '.item-head': (
     bg: white,
     textcolor: black,
-    bdr: 2px solid black,
   ),
-  
   '.login-form': (
     bg: $true-blue,
     textcolor: white,
     bdr: none,
   ),
-  
   '.nav-button-selected': (
     bg: $true-blue,
     textcolor: $white,
