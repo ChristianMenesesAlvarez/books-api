@@ -5,7 +5,7 @@ import { useNavigate, Link } from 'react-router-dom';
 export function LoginForm() {
   const navigate = useNavigate();
   const { theme } = useContext(GlobalContext);
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -21,7 +21,7 @@ export function LoginForm() {
 
   return (
     <>
-    <div className={`dropdown-button ${theme}`} onClick={() => handleOpen()}></div>
+    <div className={`dropdown-button ${theme}`} onClick={() => handleOpen()}>LOGIN</div>
     {open ?
     <form onSubmit={handleSubmit} className={`login-form ${theme}`}>
       <div className={`form-title`}>Login</div>

@@ -1,8 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { GlobalContext } from '../context/GlobalState';
-import { getCategories } from '../logic/fetch.js';
 
-export function SideBar() {
+export function SideBar(props) {
   const [buttons, setButtons] = useState([]);
   const { theme } = useContext(GlobalContext);
   const { request } = props;
@@ -18,7 +17,7 @@ export function SideBar() {
   return (
     <div className={`sidebar ${theme}`}>
       <div className={`sidebar-title  ${theme}`}>CATEGORIES</div>
-      {categories.sort().map(i => <SideBarButton key={i[1]}>{i[0]}</SideBarButton>)}
+      {buttons.sort().map(i => <SideBarButton key={i[1]}>{i[0]}</SideBarButton>)}
     </div>
   )
 }

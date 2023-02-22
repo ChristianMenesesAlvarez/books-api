@@ -1,5 +1,5 @@
 .dropdown-button {
-  position: relative;
+  width: 10%;
   border-radius: 10px;
   border: 1px solid $oxford-blue;
   text-align: center;
@@ -7,17 +7,25 @@
   color: white;
   background: $true-blue;
   line-height: 150%;
+  &:hover {
+    background: $vanilla;
+  }
+  &:checked {
+    background: $vanilla;
+  }
 }
 
 .login-form {
   @extend %flxcol;
   position: absolute;
-  top: 5px;
+  right: 20px;
+  top: 60px;
 
   width: 200px;
   padding: 10px;
   gap: 5px;
   margin: 10px;
+  outline: 2px solid $white;
   
   * {
     padding: 5px 5px;

@@ -13,6 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path='/' element={<FrontPage />}></Route>
           <Route path='/front' element={<FrontPage />}></Route>
+          <Route path='/all' element={<FrontPage />}></Route>
+          <Route path='/categories' element={<FrontPage />}></Route>
+          <Route path='/aboutus' element={<FrontPage />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

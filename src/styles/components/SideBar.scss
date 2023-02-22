@@ -1,11 +1,11 @@
 .sidebar {
   @extend %flxcol;
 
-  @media only screen and (max-width: $breakpoint2) {
+  @media only screen and (max-width: $breakpoint4) {
     display: none;
   }
 
-  @media only screen and (min-width: $breakpoint2) {
+  @media only screen and (min-width: $breakpoint4) {
     width: 300px;
   }
   .sidebar-title {

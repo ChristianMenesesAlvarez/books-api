@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 
-export function Layout() {
+export function Layout(props) {
   const { theme } = useContext(GlobalContext);
   const { children } = props;
 
