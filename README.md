@@ -8,6 +8,16 @@ This entry point has been developed with React + Vite + Sass.
 
 Gets all best-seller list by New York Times filtered by published date, categories, authors, publishers, etc.
 
+## Installation
+
+To install this project run these commands:
+
+```bash
+  git clone https://github.com/Kric12/books-api
+  cd books-api
+  npm install
+```
+    
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file.
