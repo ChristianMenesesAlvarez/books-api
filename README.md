@@ -8,6 +8,16 @@ This entry point has been developed with React + Vite + Sass.
 
 Gets all best-seller list by New York Times filtered by published date, categories, authors, publishers, etc.
 
+## Index
+
+- [Installation](https://github.com/Kric12/books-api/#installation)
+- [Environment Variables](https://github.com/Kric12/books-api/#environment-variables)
+- [Features](https://github.com/Kric12/books-api/#features)
+- [Screenshots](https://github.com/Kric12/books-api/#screenshots)
+- [Color Reference](https://github.com/Kric12/books-api/#color-reference)
+- [Author](https://github.com/Kric12/books-api/#author)
+- [License](https://github.com/Kric12/books-api/#license)
+
 ## Installation
 
 To install this project run these commands:
