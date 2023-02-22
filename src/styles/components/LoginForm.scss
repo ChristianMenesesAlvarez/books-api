@@ -1,5 +1,19 @@
+.dropdown-button {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid $oxford-blue;
+  text-align: center;
+  font-size: larger;
+  color: white;
+  background: $true-blue;
+  line-height: 150%;
+}
+
 .login-form {
   @extend %flxcol;
+  position: absolute;
+  top: 5px;
+
   width: 200px;
   padding: 10px;
   gap: 5px;
@@ -11,7 +25,7 @@
     text-align: center;
   }
 
-  div {
+  .form-title {
     font-size: large;
     font-weight: bold;
     background: inherit;
@@ -22,7 +36,7 @@
     color: black;
   }
 
-  button {
+  .form-button {
     background: inherit;
     color: white;
     border: 2px solid red;

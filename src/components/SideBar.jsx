@@ -3,19 +3,20 @@ import { GlobalContext } from '../context/GlobalState';
 import { getCategories } from '../logic/fetch.js';
 
 export function SideBar() {
-  const [categories, setCategories] = useState([]);
+  const [buttons, setButtons] = useState([]);
   const { theme } = useContext(GlobalContext);
+  const { request } = props;
 
   useEffect(() => {
     async function fetchData() {
-      const res = await getCategories();
-      setCategories(res);
+      const res = await request();
+      setButtons(res);
     }
     fetchData();
   }, [])
 
   return (
-    <div className={`side-bar ${theme}`}>
+    <div className={`sidebar ${theme}`}>
       <div className={`sidebar-title  ${theme}`}>CATEGORIES</div>
       {categories.sort().map(i => <SideBarButton key={i[1]}>{i[0]}</SideBarButton>)}
     </div>
