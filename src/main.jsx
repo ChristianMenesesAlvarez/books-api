@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { GlobalProvider } from './context/GlobalState';
 import './styles/styles.scss';
-import { Header } from './containers/Header';
-import { Footer } from './containers/Footer';
-import { FrontPage } from './router';
+import { Header, Footer, FrontPage } from './router';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
