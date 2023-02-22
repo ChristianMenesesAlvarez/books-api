@@ -72,3 +72,6 @@ The colors saved in it are these ones:
 
 - [@Christian Meneses](https://www.github.com/Kric12)
 
+## License
+
+[GNU 3.0](https://github.com/Kric12/books-api/blob/main/LICENSE)
