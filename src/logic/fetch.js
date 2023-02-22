@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const url = 'https://api.nytimes.com/svc/books/v3/';
-const key = '.json?api-key=xxFT7k9zAeoSrJGXAGtwf8wGAhNLFF8C';
+const key = '.json?api-key' + process.env.API_KEY;
 
 const endpoints = {
   getCategories: 'lists/names',
